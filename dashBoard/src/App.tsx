@@ -1,6 +1,6 @@
 import { Routes, Route, Link } from "react-router-dom";
 import TasksPage from "./features/tasks/pages/TasksPage";
-import EmployeesPage from "./features/employees/pages/EmployeesPage";
+import EmployeesPage from "./features/employees/pages/EmployeesPage.tsx";
 
 
 

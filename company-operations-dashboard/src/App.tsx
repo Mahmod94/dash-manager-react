@@ -2,6 +2,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import EmployeesPage from "./features/employees/pages/EmployeesPage";
 import Taskspage from "./features/tasks/pages/TasksPage";
 
+import "App.css"
 
 export default function App()
 {
