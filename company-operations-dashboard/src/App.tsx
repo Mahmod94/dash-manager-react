@@ -1,14 +1,26 @@
+import { Routes, Route, Link } from "react-router-dom";
+import EmployeesPage from "./features/employees/pages/EmployeesPage";
+import Taskspage from "./features/tasks/pages/TasksPage";
 
 
 export default function App()
 {
-  
-
-
   return (
-
-    <div>
+    <>
       <h1>Company Operations Dashboard</h1>
-    </div>
+
+      <nav style={{ display: "flex", gap: 12, marginBottom: 16}}>
+        <Link to="/">Employees</Link>
+        <Link to="/tasks">Tasks</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<EmployeesPage />} />
+        <Route path="/tasks" element={<Taskspage />} />
+      </Routes>
+    
+    </>
   );
 }
+
+
